@@ -1,0 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+body {
+    background-image: url(../../img/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    height: 250px;
+    width: 90%;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+
+    .contenedor-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            .img-logo {
+                height: 70px;
+
+            }
+        }
+
+        .navegacion {
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+            .nav {
+                @include m.formato-navs();
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+
+
+}
