@@ -2,14 +2,14 @@
 @use '../base/mixins' as m;
 
 body {
-    background-image: url(../../img/Fondo.png);
+    background-image: url(../../img/Fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .header {
-    height: 250px;
+    height: 200px;
     width: 90%;
     margin: auto auto;
     display: flex;
@@ -30,8 +30,8 @@ body {
 
         .navegacion {
             width: 700px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            align-items: center;
             
             .nav {
                 @include m.formato-navs();

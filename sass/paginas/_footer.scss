@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.background-footer {
+    background-color: v.$negro;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: v.$blanco;
+        @include m.formato-text();
+        align-items: center;
+    }
+}
