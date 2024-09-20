@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "barberia": "file:",
     "sass": "^1.78.0"
   }
 }
