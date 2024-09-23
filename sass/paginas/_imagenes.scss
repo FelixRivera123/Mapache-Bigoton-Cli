@@ -1,0 +1,21 @@
+.contenedor-headerG {
+    .barraImagen{
+        width: 100px;
+        height: 10px;
+    }
+    background-position: center;
+    /* Centra la imagen en el div */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    z-index: 2;
+
+    /* Asegura que el div esté en el nivel correcto */
+    .imagenFondoG {
+        position: relative;
+        /* Necesario para que el contenido se posicione correctamente */
+        z-index: 2;
+        /* Asegura que el contenido esté por encima de la imagen de fondo */
+        color: white;
+        /* Cambia el color del texto si es necesario para mejor visibilidad */
+    }
+}
